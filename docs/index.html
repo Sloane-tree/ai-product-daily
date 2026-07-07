@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Product Daily</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#FFFDF9;--text:#1A1816;--dim:#787570;--rule:#E8E2D6;--accent:#C9352B;--surface:#FFF}
+@media(prefers-color-scheme:dark){:root{--bg:#1A1816;--text:#E8E2D4;--dim:#8A857D;--rule:#2E2B26;--accent:#E0554A;--surface:#22201C}}
+body{font-family:"PingFang SC","Hiragino Sans GB",-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;display:flex;min-height:100vh}
+nav{width:220px;flex-shrink:0;border-right:1px solid var(--rule);padding:28px 20px;overflow-y:auto;background:var(--surface);position:sticky;top:0;height:100vh}
+nav h2{font-family:Georgia,serif;font-size:18px;margin-bottom:20px;letter-spacing:-0.3px}
+nav h2 span{color:var(--accent)}
+nav a{display:block;padding:6px 10px;font-size:13px;color:var(--dim);text-decoration:none;border-radius:4px;transition:all 0.15s}
+nav a:hover,nav a.active{color:var(--text);background:var(--bg)}
+main{flex:1;max-width:780px;padding:28px 48px 60px;overflow-y:auto}
+main h1{font-family:Georgia,serif;font-size:26px;margin-bottom:6px}
+main h2{font-size:19px;margin:36px 0 14px;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+main h3{font-size:16px;margin:24px 0 10px}
+main p{margin-bottom:12px;font-size:15px}
+main table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:14px}
+main td,main th{padding:8px 12px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+main td:first-child{font-weight:600;white-space:nowrap;color:var(--dim);width:120px}
+main strong{color:var(--accent)}
+main a{color:var(--accent)}
+main blockquote{border-left:3px solid var(--accent);padding:12px 18px;margin:16px 0;background:var(--surface);border-radius:0 6px 6px 0;font-size:15px}
+main hr{border:none;border-top:1px solid var(--rule);margin:28px 0}
+main code{font-size:13px;background:var(--bg);padding:2px 6px;border-radius:3px}
+main .loading{text-align:center;color:var(--dim);padding:60px 0}
+@media(max-width:768px){body{flex-direction:column}nav{width:100%;height:auto;position:static;padding:16px;display:flex;gap:8px;overflow-x:auto;border-right:none;border-bottom:1px solid var(--rule)}nav h2{display:none}nav a{white-space:nowrap;font-size:12px}main{padding:20px 16px 40px}}
+</style>
+</head>
+<body>
+
+<nav>
+<h2><span>AI</span> Product Daily</h2>
+<div id="nav-links"></div>
+</nav>
+
+<main id="content"><div class="loading">加载中…</div></main>
+
+<script>
+var reports = [{"date": "2026-07-07", "html": "<h1>🤖 AI Product Daily</h1>\n<p><strong>2026年7月7日</strong></p>\n<blockquote>\n<p>今日扫描 40+ 条信息，精选 8 条 | 阅读时间约 5 分钟</p>\n</blockquote>\n<hr />\n<h2>🔥 Today's Signals</h2>\n<h3>1. OpenAI 提议 5% 股权给美国政府，AI 治理进入\"股东模式\"</h3>\n<table>\n<thead>\n<tr>\n<th>维度</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>📊 重要性</td>\n<td>⭐⭐⭐⭐ (4/5)</td>\n</tr>\n<tr>\n<td>📝 一句话</td>\n<td>OpenAI 提议向美国政府转让 5% 股权（估值 ~$4260 亿），并呼吁其他 AI 巨头效仿，以全民分红形式共享 AI 财富</td>\n</tr>\n<tr>\n<td>💡 为什么重要</td>\n<td>这是 AI 行业首次出现\"政府作为股东\"的治理模式。不再是被动监管，而是利益绑定。如果落地，将重塑 AI 公司与政府的博弈规则——从对抗走向共谋</td>\n</tr>\n<tr>\n<td>🔍 产品启发</td>\n<td>治理即产品。未来 AI 产品需要内置\"合规可审计性\"作为第一性功能，而非后期打补丁。参考 Anthropic 的 Glasswing 项目——模型级别的安全协作能力本身就是护城河</td>\n</tr>\n<tr>\n<td>🏷 标签</td>\n<td><code>Funding</code> <code>OpenAI</code> <code>Governance</code></td>\n</tr>\n<tr>\n<td>🔗 来源</td>\n<td><a target=\"_blank\" rel=\"noopener\" href=\"https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html\">CNBC</a></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>2. Anthropic 出口禁令解除：美国政府首次对 AI 模型动用出口管制，17 天后撤回</h3>\n<table>\n<thead>\n<tr>\n<th>维度</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>📊 重要性</td>\n<td>⭐⭐⭐⭐⭐ (5/5)</td>\n</tr>\n<tr>\n<td>📝 一句话</td>\n<td>6月12日美国叫停 Fable 5/Mythos 5 全球访问，7月1日解除——首次对\"模型\"而非\"芯片\"实施出口管制</td>\n</tr>\n<tr>\n<td>💡 为什么重要</td>\n<td>这是一个先例。AI 模型被正式划入\"国家安全资产\"范畴。未来任何前沿模型的发布都可能面临类似审查。CIA 局长已将其类比为核武器。这不仅是 Anthropic 一家的事，是整个行业的监管拐点</td>\n</tr>\n<tr>\n<td>🔍 产品启发</td>\n<td>出海 AI 产品必须从第一天考虑\"模型合规性\"——你的底层模型是否受出口管制？能否在目标市场合法调用？这是 PM 需要新加的评估维度</td>\n</tr>\n<tr>\n<td>🏷 标签</td>\n<td><code>Model</code> <code>Anthropic</code> <code>Regulation</code> <code>Fable 5</code></td>\n</tr>\n<tr>\n<td>🔗 来源</td>\n<td><a target=\"_blank\" rel=\"noopener\" href=\"https://www.bbc.com/news/articles/cdr42623e1do\">BBC</a></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>3. Meta 战略大转向：进军云计算 + 三星代工芯片，AI 基础设施进入\"算力商品化\"</h3>\n<table>\n<thead>\n<tr>\n<th>维度</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>📊 重要性</td>\n<td>⭐⭐⭐⭐⭐ (5/5)</td>\n</tr>\n<tr>\n<td>📝 一句话</td>\n<td>Meta 推出 \"Meta Compute\" 云业务出售闲置算力，同时将下一代 AI 芯片代工从台积电转向三星（~$656 亿订单），扎克伯格承认 AI Agent 研发未达预期</td>\n</tr>\n<tr>\n<td>💡 为什么重要</td>\n<td>算力供给端正在发生结构性变化。当 Meta 都开始卖算力，意味着：① 训练侧算力需求可能见顶 ② 推理侧需求在快速增长 ③ 半导体格局从\"台积电一家独大\"开始松动。对于 AI 产品，推理成本将持续下降，这利好所有基于 LLM 的应用层产品</td>\n</tr>\n<tr>\n<td>🔍 产品启发</td>\n<td>算力过剩 = 推理成本下降 = 可以设计更重度依赖 LLM 的产品体验。之前因为成本不敢做的\"多轮 Agent 推理\"、\"实时上下文注入\"等体验，成本门槛正在消失。重新评估那些\"因为太贵所以砍掉\"的产品方案</td>\n</tr>\n<tr>\n<td>🏷 标签</td>\n<td><code>Infrastructure</code> <code>Meta</code> <code>Cloud</code> <code>Semiconductor</code></td>\n</tr>\n<tr>\n<td>🔗 来源</td>\n<td><a target=\"_blank\" rel=\"noopener\" href=\"https://finance.yahoo.com/technology/ai/articles/zuckerberg-meta-ai-reorganization-goals-023300733.html\">Yahoo Finance</a> · <a target=\"_blank\" rel=\"noopener\" href=\"https://www.icsmart.cn/107228/\">芯智讯</a></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>4. Agent 时代正式到来：Cursor 3 重构 IDE + Claude Code 开放 Artifacts + GitHub 霸榜</h3>\n<table>\n<thead>\n<tr>\n<th>维度</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>📊 重要性</td>\n<td>⭐⭐⭐⭐⭐ (5/5)</td>\n</tr>\n<tr>\n<td>📝 一句话</td>\n<td>Cursor 3 发布 Agent-First IDE、Claude Code Artifacts 向 Pro 用户开放、GitHub Trending 被 Agent 类项目霸榜——AI Agent 从\"实验性功能\"变成了\"基础设施\"</td>\n</tr>\n<tr>\n<td>💡 为什么重要</td>\n<td>三大信号同时出现：① IDE 从\"辅助编码\"重构为\"Agent 调度中心\" ② Claude Code 的 Artifacts 让 Agent 输出从终端走向可视化 ③ agency-agents（126K ⭐）证明\"一人独角兽\"工具链已成现实。对 PM 而言，这不是\"要不要用 Agent\"的问题，而是\"在哪里用、怎么用\"</td>\n</tr>\n<tr>\n<td>🔍 产品启发</td>\n<td>Agent 时代的 PM 需要掌握三个新技能：① 定义 Agent 的能力边界（什么交给 Agent，什么留给人）② 设计 Agent-to-Agent 协作流程 ③ 评估 Agent 输出的质量（不是代码审查，而是\"交付物审查\"）。另外注意：Skills 正在成为 Agent 时代的\"App Store\"分发层</td>\n</tr>\n<tr>\n<td>🏷 标签</td>\n<td><code>Product</code> <code>Agent</code> <code>Cursor</code> <code>Claude Code</code> <code>GitHub</code></td>\n</tr>\n<tr>\n<td>🔗 来源</td>\n<td><a target=\"_blank\" rel=\"noopener\" href=\"https://cursor.com/en-US/changelog\">Cursor Changelog</a> · <a target=\"_blank\" rel=\"noopener\" href=\"https://dev.to/muildev/github-trending-digest-2026-07-07-58hg\">GitHub Trending</a></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h3>5. MCP 成为 AI 基础设施标准：IETF 标准化 + 微软/ThoughtSpot/LucidLink 全线接入</h3>\n<table>\n<thead>\n<tr>\n<th>维度</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>📊 重要性</td>\n<td>⭐⭐⭐⭐ (4/5)</td>\n</tr>\n<tr>\n<td>📝 一句话</td>\n<td>Model Context Protocol (MCP) 进入 IETF 正式标准化流程（MCP-AX 草案），微软 Copilot Studio、ThoughtSpot、LucidLink 等全线接入</td>\n</tr>\n<tr>\n<td>💡 为什么重要</td>\n<td>MCP 正在成为 AI Agent 的\"USB 接口\"——统一的工具连接标准。这意味着：① Agent 不再被锁定在特定生态 ② 工具开发者有了明确的对接标准 ③ 未来会出现\"MCP 工具市场\"。PM 应该关注：你的产品是否需要暴露 MCP 接口供 Agent 调用？</td>\n</tr>\n<tr>\n<td>🔍 产品启发</td>\n<td>如果你的产品是工具型 SaaS，现在是公开 MCP Server 的最佳时机，可以抢先获得 Agent 流量入口。如果你的产品是 Agent 型应用，评估是否支持 MCP 工具接入来决定生态开放度</td>\n</tr>\n<tr>\n<td>🏷 标签</td>\n<td><code>Technology</code> <code>MCP</code> <code>Standard</code> <code>Infrastructure</code></td>\n</tr>\n<tr>\n<td>🔗 来源</td>\n<td><a target=\"_blank\" rel=\"noopener\" href=\"https://datatracker.ietf.org/doc/html/draft-abbott-mcp-ax-00\">IETF</a> · <a target=\"_blank\" rel=\"noopener\" href=\"https://www.eetimes.com/model-context-protocol-emerges-as-a-common-framework-for-enterprise-ai-systems/\">EE Times</a></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h2>🚀 Products Worth Exploring</h2>\n<table>\n<thead>\n<tr>\n<th>产品</th>\n<th>一句话</th>\n<th>推荐原因</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Cursor 3</strong></td>\n<td>Agent-First IDE，支持并行 Agent 执行、Design Mode、Cloud Handoff</td>\n<td>这是 IDE 品类从\"辅助\"到\"调度\"的范式转换。PM 可以体验 Design Mode——用自然语言描述 UI 需求，Agent 直接生成前端代码</td>\n</tr>\n<tr>\n<td><strong>agency-agents</strong></td>\n<td>开源\"一人独角兽\"工具包，编程/营销/社交媒体等垂直 Agent 即开即用</td>\n<td>126K ⭐ 不是偶然，反映了\"非技术人员使用 Agent\"的巨大需求。体验它来理解 Agent UX 的最佳实践</td>\n</tr>\n<tr>\n<td><strong>codebase-memory-mcp</strong></td>\n<td>将整个代码库索引为知识图谱，158 语言，减少 99% token 消耗</td>\n<td>Token 成本焦虑正在催生\"效率型 MCP 工具\"品类。这个产品的价值主张（99% fewer tokens）本身就是一个 PM 案例</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h2>💻 GitHub Worth Watching</h2>\n<table>\n<thead>\n<tr>\n<th>项目</th>\n<th>解决什么问题</th>\n<th>为什么值得关注</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>topoteretes/cognee</strong> (26K ⭐)</td>\n<td>AI Agent 的\"失忆症\"——跨会话的持久化长期记忆</td>\n<td>记忆是 Agent 体验的瓶颈。cognee 用知识图谱 + 图数据库实现，代表了一种非向量数据库的记忆方案。PM 设计 Agent 产品时需要理解不同记忆架构的取舍</td>\n</tr>\n<tr>\n<td><strong>openai/codex-plugin-cc</strong> (23K ⭐)</td>\n<td>OpenAI 在 Claude Code 中内置 Codex 调用</td>\n<td>这个项目的战略信号大于技术价值：OpenAI 承认开发者锁在 Claude Code 生态中，选择\"加入\"而非\"对抗\"。对 PM 的启发——生态互操作性是必然趋势，封闭生态策略正在失效</td>\n</tr>\n</tbody>\n</table>\n<hr />\n<h2>💡 Today's Product Insight</h2>\n<p><strong>Skills 正在成为 Agent 时代的 App Store。</strong></p>\n<p>本周 GitHub Trending 前十中，Skill 仓库占据了显著位置。caveman（82K ⭐，让 AI \"变懒\"来省 65% token）、superpowers（245K ⭐，Agent 技能框架）、claude-skills（21K ⭐，337+ 模块化技能）——这些不是模型，不是工具，而是\"如何用好 Agent\"的可复用知识包。</p>\n<p>这意味着：Agent 生态的价值链正在从\"模型层\"上移到\"技能层\"。就像 iOS App Store 让开发者不需要懂芯片就能创造价值，Skills 让 PM 和领域专家不需要懂 Prompt Engineering 也能构建 Agent 能力。</p>\n<p>对产品经理的核心启示：<strong>不要再花时间写 Prompt 了，开始积累 Skills。</strong> 每个领域的专业知识（如何做竞品分析、如何设计用户访谈、如何写 PRD）都可以封装为可复用的 Skill，然后被 Agent 按需调用。这不是效率工具，这是知识资产的数字化。</p>\n<hr />\n<h2>✅ Today's Action</h2>\n<blockquote>\n<p>体验 <strong>Cursor 3 的 Design Mode</strong>。打开 Cursor，用自然语言描述你想做的某个产品页面——观察 Agent 如何将你的需求转化为代码，思考这对\"PM 和设计师协作方式\"意味着什么。</p>\n</blockquote>\n<hr />\n<p><em>AI Product Daily · 每日 08:30 更新 · <a target=\"_blank\" rel=\"noopener\" href=\"https://github.com/xiaokunma/ai-product-daily\">GitHub</a></em></p>"}];
+var currentDate = null;
+
+function renderNav() {
+    var nav = document.getElementById('nav-links');
+    reports.forEach(function(r) {
+        var a = document.createElement('a');
+        a.href = '#';
+        a.textContent = r.date;
+        a.onclick = function(e) { e.preventDefault(); showReport(r.date); };
+        nav.appendChild(a);
+    });
+}
+
+function showReport(date) {
+    var report = reports.find(function(r) { return r.date === date; });
+    if (!report) return;
+    currentDate = date;
+
+    document.getElementById('content').innerHTML = report.html;
+
+    // Highlight active nav
+    var links = document.querySelectorAll('nav a');
+    links.forEach(function(a) {
+        a.classList.toggle('active', a.textContent === date);
+    });
+}
+
+// Show latest report on load
+renderNav();
+if (reports.length > 0) {
+    showReport(reports[0].date);
+}
+</script>
+
+</body>
+</html>
